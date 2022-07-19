@@ -1,0 +1,6 @@
+<div class="active-guess">
+    <ul class="guess">
+        <li *ngFor="let letter of guessArray"><p>{{letter.toUpperCase()}}</p></li>
+        <li *ngFor="let emptyLetter of emptyLetters">{{emptyLetter}}</li>
+    </ul>
+</div>

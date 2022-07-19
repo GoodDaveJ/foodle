@@ -1,0 +1,9 @@
+<div class="guesses">
+    <ul class="guess" *ngFor="let guess of guesses">
+        <li [ngClass]="{'in-word': guess.letters[0].isInWord === true, 'in-place' : guess.letters[0].isInCorrectPlace === true }"><p>{{guess.letters[0].letter.toUpperCase()}}</p></li>
+        <li [ngClass]="{'in-word': guess.letters[1].isInWord === true, 'in-place' : guess.letters[1].isInCorrectPlace === true }"><p>{{guess.letters[1].letter.toUpperCase()}}</p></li>
+        <li [ngClass]="{'in-word': guess.letters[2].isInWord === true, 'in-place' : guess.letters[2].isInCorrectPlace === true }"><p>{{guess.letters[2].letter.toUpperCase()}}</p></li>
+        <li [ngClass]="{'in-word': guess.letters[3].isInWord === true, 'in-place' : guess.letters[3].isInCorrectPlace === true }"><p>{{guess.letters[3].letter.toUpperCase()}}</p></li>
+        <li [ngClass]="{'in-word': guess.letters[4].isInWord === true, 'in-place' : guess.letters[4].isInCorrectPlace === true }"><p>{{guess.letters[4].letter.toUpperCase()}}</p></li>
+    </ul>
+</div>

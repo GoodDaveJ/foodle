@@ -1,0 +1,4 @@
+<app-guesses  *ngIf="guesses.length > 0"></app-guesses>
+<app-guess-word *ngIf="remainingGuesses > 0 && guesses.length < 6"></app-guess-word>
+<app-remaining *ngIf="remainingGuesses > 1"></app-remaining>
+
